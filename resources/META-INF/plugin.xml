@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.dupenghao.plugin.syncproject</id>
+    <name>同步项目文件</name>
+    <version>1.0</version>
+    <vendor email="392973793@qq.com" url="http://www.yourcompany.com">DPH</vendor>
+
+    <description>由于2022版本的IDEA在调试代码的时候,经常编译错误,因此用这个插件把代码复制一份用2017版本IDEA进行调试</description>
+
+    <change-notes>Nothing</change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.dupenghao.syncproject" class="SyncProject" text="SyncProject" description="同步项目文件">
+            <add-to-group group-id="HelpMenu" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>

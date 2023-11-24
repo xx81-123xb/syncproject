@@ -1,0 +1,21 @@
+.gradle
+.idea
+logs/
+node_modules/
+out/
+build/
+www/
+webapp/node_modules/
+PreHandleWar/lib/
+classes/
+\# Ignore Gradle GUI config
+gradle-app.setting
+package-lock.json
+upload/
+webapp/dist/
+prod/
+temp/
+errorlog/
+quickCopy.bat
+自动部署总结/
+download/
